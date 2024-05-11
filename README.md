@@ -1,5 +1,5 @@
-"# Potato-mash-dc-bot" 
+功能の薯泥 BOT V0.0.1
 
-Potato BOT V0.0.1
+自用整合discord機器人基於discord.js_v14開發
 
-自用整合 discord 機器人 based on discord.js v14
+非常的不好用 而且沒什麼功能
