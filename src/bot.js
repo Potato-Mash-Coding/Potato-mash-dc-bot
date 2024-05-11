@@ -25,4 +25,5 @@ for (const folder of functionFolders) {
 
 client.commandsHandlers();
 client.eventHandle();
+
 client.login(token);
