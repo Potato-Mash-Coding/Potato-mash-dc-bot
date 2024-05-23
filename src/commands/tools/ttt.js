@@ -1,6 +1,6 @@
 const TicTacToe = require('discord-tictactoe');
 const { SlashCommandBuilder } = require('discord.js');
-const game = new TicTacToe({ language: "en"});
+const game = new TicTacToe({ language: "zh-tw"});
 
 module.exports = {
     data: new SlashCommandBuilder()

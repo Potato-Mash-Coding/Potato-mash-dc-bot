@@ -18,17 +18,17 @@ module.exports = {
         const text = options.getString('內容');
         const lan = options.getString('語言');
 
-        await interaction.reply({ content: `🤖正在翻譯該內容....`, ephemeral:true});
+        await interaction.reply({ content: `🤖正在翻譯該內容....`});
 
         const applied = await translate(text, { to: `${lan}`});
 
         const embed = new EmbedBuilder()
         .setColor("Green")
         .setTitle(`✅翻譯成功✅`)
-        .addFields({ name: '內容', value: `\`\`\`${text}\`\`\``, inline: true})
-        .addFields({ name: '翻譯內容', value: `\`\`\`${applied.text}\`\`\``, inline: true})
+        .addFields({ name: '內容', value: `\`\`\`${text}\`\`\``})
+        .addFields({ name: '翻譯內容', value: `\`\`\`${applied.text}\`\`\``})
 
-        await interaction.editReply({content: '', embeds: [embed], ephemeral:true });
+        await interaction.editReply({content: '', embeds: [embed]});
     }
 }
         
